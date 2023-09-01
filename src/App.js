@@ -24,6 +24,7 @@ function App() {
   const navRef = useRef()
   const btnRef = useRef()
   const darkMode = useRef()
+  const headRef = useRef()
   const darkmodeRef = useRef()
   useEffect(() => {
     setLoading(true)
@@ -61,9 +62,9 @@ localStorage.setItem('dark', JSON.stringify(background))
         :
         <div className={`App ${background ? "bg" : ""}`} ref={darkmodeRef}>
 
-              <Navbar navRef={navRef} changeBg={changeBg} setChangeBg={setChangeBg} changeBackground={changeBackground} />
+              <Navbar navRef={navRef} changeBg={changeBg} setChangeBg={setChangeBg}/>
       <div className='app__wrapper'>
-      <Home btnRef={btnRef} handleClick={handleClick} change={change} setChange={setChange} darkMode={darkMode}/>
+      <Home btnRef={btnRef} handleClick={handleClick} change={change} setChange={setChange} changeBackground={changeBackground} darkMode={darkMode}/>
       <About/>
       <Skills />
       <Resume/>

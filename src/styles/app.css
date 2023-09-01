@@ -10,7 +10,6 @@
 }
 
 .App {
-  background: url(../component/img/hacker-thinking-about-code.gif) no-repeat center center;
   background-color: #272727;
   display: flex;
   width: 100%;
@@ -55,6 +54,11 @@
 .App .div__nav h1 {
   font-size: 1.5rem;
 }
+@media (max-width: 480px) {
+  .App .div__nav h1 {
+    font-size: 1rem;
+  }
+}
 .App .div__nav .social__icons {
   display: flex;
   align-items: center;
@@ -75,7 +79,6 @@
 }
 .App .div__nav .nav__list {
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 20px;
@@ -104,8 +107,8 @@
   align-items: center;
   flex-direction: row;
   color: #f5f5f5;
-  justify-content: space-around;
-  font-size: 1.2rem;
+  gap: 20px;
+  font-size: 1rem;
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
@@ -113,32 +116,6 @@
   .App .div__nav .nav__list li a {
     font-size: 1rem;
   }
-}
-.App .div__nav .nav__list li button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  color: #f5f5f5;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: 0.5s ease-in-out;
-  transform: translateY(30px);
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.App .div__nav .nav__list li button span {
-  background: #03a9f4;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 50%;
-  color: #272727;
-  transform: rotate(250deg);
 }
 .App .div__nav .nav__list .active {
   color: #03a9f4;
@@ -159,7 +136,7 @@
   text-align: center;
 }
 .App .div__nav .footer h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 @media (max-width: 480px) {
   .App .div__nav .footer h2 {
@@ -168,12 +145,17 @@
   }
 }
 .App .div__nav .footer h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 @media (max-width: 480px) {
   .App .div__nav .footer h3 {
     font-size: 0.8rem;
     font-weight: 400;
+  }
+}
+@media (max-width: 480px) {
+  .App .div__nav .footer {
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
@@ -231,9 +213,9 @@
 }
 .App .app__wrapper .home .span {
   position: fixed;
-  right: 10%;
-  top: 50px;
-  font-size: 2rem;
+  left: 3%;
+  top: 30px;
+  font-size: 1.5rem;
   color: #ffffff;
   background: #03a9f4;
   display: none;
@@ -267,6 +249,42 @@
     justify-content: space-around;
   }
 }
+.App .app__wrapper .home .but_div {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #f5f5f5;
+  justify-content: space-around;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  transform: translateY(30px);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3000;
+}
+@media (max-width: 480px) {
+  .App .app__wrapper .home .but_div {
+    position: fixed;
+    right: 3%;
+  }
+}
+.App .app__wrapper .home .but_div span {
+  background: #03a9f4;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50%;
+  color: #272727;
+  transform: rotate(250deg);
+}
 .App .app__wrapper .home .btn__change {
   background: #272727;
   font-weight: 400;
@@ -286,8 +304,7 @@
 }
 @media (max-width: 480px) {
   .App .app__wrapper .home .home__inner h1 {
-    font-size: 2rem;
-    border: 2px solid red;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
@@ -299,7 +316,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #eaece5;
 }
 @media (max-width: 480px) {
@@ -311,6 +328,7 @@
   background: #eaece5;
   padding: 0 15px;
   transition: 0.5s ease-in-out;
+  width: 100%;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about {
@@ -326,7 +344,7 @@
   position: relative;
 }
 .App .app__wrapper .section__about .head h2, .App .app__wrapper .section__about .div__fact .fact__head h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -344,41 +362,19 @@
   left: 0;
   border-radius: 10px;
 }
-.App .app__wrapper .section__about .pt, .App .app__wrapper .section__about .div__fact .fact__pt {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  height: 100px;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  padding: 10px 0;
-}
-@media (max-width: 480px) {
-  .App .app__wrapper .section__about .pt, .App .app__wrapper .section__about .div__fact .fact__pt {
-    width: 100%;
-    height: 100px;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 481px) and (max-width: 900px) {
-  .App .app__wrapper .section__about .pt, .App .app__wrapper .section__about .div__fact .fact__pt {
-    width: 100%;
-    height: 120px;
-  }
-}
 .App .app__wrapper .section__about .div__info {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 50px;
   width: 100%;
-  height: 600px;
+  height: 500px;
+  margin: 15px 0;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__info {
     width: 100%;
     height: 800px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -386,13 +382,13 @@
 @media (min-width: 481px) and (max-width: 900px) {
   .App .app__wrapper .section__about .div__info {
     width: 100%;
-    height: 1200px;
+    height: 900px;
     display: flex;
     flex-direction: column;
+    row-gap: 0;
   }
 }
 .App .app__wrapper .section__about .div__info .fist__div {
-  width: 40%;
   height: 90%;
 }
 .App .app__wrapper .section__about .div__info .fist__div img {
@@ -401,23 +397,24 @@
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__info .fist__div {
-    width: 80%;
+    width: 100%;
     height: 40%;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
   .App .app__wrapper .section__about .div__info .fist__div {
-    width: 90%;
-    height: 45%;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
   }
 }
 .App .app__wrapper .section__about .div__info .secon__div {
-  width: 55%;
   height: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__info .secon__div {
@@ -427,13 +424,12 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 0px;
-    padding: 10px 0;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
   .App .app__wrapper .section__about .div__info .secon__div {
     width: 100%;
-    height: 60%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -447,76 +443,42 @@
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__info .secon__div h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
   .App .app__wrapper .section__about .div__info .secon__div h2 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__info .secon__div p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 .App .app__wrapper .section__about .div__info .secon__div .first__li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
-  height: 250px;
-  padding: 20px;
-}
-@media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__info .secon__div .first__li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 70%;
-    width: 100%;
-    padding: 0px 10px;
-    border: 2px solid red;
-  }
-}
-@media (min-width: 481px) and (max-width: 900px) {
-  .App .app__wrapper .section__about .div__info .secon__div .first__li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100%;
-    width: 100%;
-  }
-}
-.App .app__wrapper .section__about .div__info .secon__div .first__li div {
-  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 @media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__info .secon__div .first__li div {
+  .App .app__wrapper .section__about .div__info .secon__div .first__li {
     width: 100%;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  .App .app__wrapper .section__about .div__info .secon__div .first__li div {
+  .App .app__wrapper .section__about .div__info .secon__div .first__li {
     width: 100%;
   }
 }
-.App .app__wrapper .section__about .div__info .secon__div .first__li div li {
+.App .app__wrapper .section__about .div__info .secon__div .first__li li {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   list-style: none;
+  word-spacing: 20px;
 }
-.App .app__wrapper .section__about .div__info .secon__div .first__li div li span {
+.App .app__wrapper .section__about .div__info .secon__div .first__li li span {
   color: rgba(39, 39, 39, 0.7176470588);
 }
-.App .app__wrapper .section__about .div__info .secon__div .first__li div li::before {
+.App .app__wrapper .section__about .div__info .secon__div .first__li li::before {
   content: ">";
   font-size: 1.5rem;
   font-weight: 10;
@@ -524,14 +486,14 @@
   color: #03a9f4;
 }
 @media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__info .secon__div .first__li div li::before {
-    font-size: 1rem;
+  .App .app__wrapper .section__about .div__info .secon__div .first__li li::before {
+    font-size: 0.8rem;
     font-weight: 600;
   }
 }
 @media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__info .secon__div .first__li div li {
-    font-size: 1rem;
+  .App .app__wrapper .section__about .div__info .secon__div .first__li li {
+    font-size: 0.8rem;
     font-weight: 600;
   }
 }
@@ -541,33 +503,32 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .App .app__wrapper .section__about .div__fact {
-  padding: 20px 0;
   width: 100%;
-  height: 320px;
+  height: 200px;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__fact {
     width: 100%;
-    height: 650px;
+    height: 400px;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
   .App .app__wrapper .section__about .div__fact {
     width: 100%;
-    height: 830px;
+    height: 400px;
   }
 }
 .App .app__wrapper .section__about .div__fact .fact__main {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 20px 0;
+  margin: 20px 0;
+  justify-content: space-between;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__fact .fact__main {
     display: flex;
     flex-direction: column;
+    margin: 0px 0;
     width: 100%;
   }
 }
@@ -582,6 +543,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  gap: 30px;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__fact .fact__main .main {
@@ -599,9 +561,8 @@
     flex-direction: row;
     -moz-column-gap: 20px;
          column-gap: 20px;
-    padding: 20px 20px;
+    padding: 10px 20px;
     width: 100%;
-    border: 2px solid lawngreen;
   }
 }
 .App .app__wrapper .section__about .div__fact .fact__main .main .icon__span {
@@ -614,10 +575,15 @@
     font-size: 2rem;
   }
 }
+@media (min-width: 481px) and (max-width: 900px) {
+  .App .app__wrapper .section__about .div__fact .fact__main .main .icon__span {
+    font-size: 2rem;
+  }
+}
 .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal {
@@ -633,41 +599,57 @@
     align-items: flex-start;
   }
 }
-.App .app__wrapper .section__about .div__fact .fact__main .main .main__cal span {
+.App .app__wrapper .section__about .div__fact .fact__main .main .main__cal .span1 {
   font-size: 3rem;
   font-weight: 700;
   position: relative;
 }
 @media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal span {
-    font-size: 2rem;
+  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal .span1 {
+    font-size: 1rem;
   }
 }
-.App .app__wrapper .section__about .div__fact .fact__main .main .main__cal span::after {
+@media (min-width: 481px) and (max-width: 900px) {
+  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal .span1 {
+    font-size: 1.5rem;
+  }
+}
+.App .app__wrapper .section__about .div__fact .fact__main .main .main__cal .span1::after {
   content: "+";
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
   top: 10px;
 }
 @media (max-width: 480px) {
-  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal span::after {
-    font-size: 1.5rem;
-    top: 5px;
+  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal .span1::after {
+    font-size: 0.8rem;
+    top: 2px;
+  }
+}
+@media (min-width: 481px) and (max-width: 900px) {
+  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal .span1::after {
+    font-size: 1rem;
+    top: 3px;
   }
 }
 .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.7176470588);
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 900px) {
+  .App .app__wrapper .section__about .div__fact .fact__main .main .main__cal p {
+    font-size: 0.8rem;
   }
 }
 .App .app__wrapper .skills {
   background: #f5f8fd;
-  padding: 50px 10px;
+  padding: 20px 10px;
   width: 100%;
   height: 450px;
 }
@@ -688,7 +670,7 @@
   position: relative;
 }
 .App .app__wrapper .skills .skills__head h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -713,7 +695,7 @@
   width: 100%;
   height: 100px;
   justify-content: space-around;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -783,7 +765,7 @@
   }
 }
 .App .app__wrapper .skills .skills__rating .div__skills__part1 .html span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -814,20 +796,9 @@
   height: 10px;
   background: #03a9f4;
   transition: ease-in-out;
-  -webkit-animation-name: animate1;
-          animation-name: animate1;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes animate1 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 580px;
-  }
+  animation-name: animate1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 @keyframes animate1 {
   from {
@@ -838,14 +809,6 @@
   }
 }
 @media (max-width: 480px) {
-  @-webkit-keyframes animate1 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
   @keyframes animate1 {
     from {
       width: 0%;
@@ -856,14 +819,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  @-webkit-keyframes animate1 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
   @keyframes animate1 {
     from {
       width: 0%;
@@ -878,7 +833,7 @@
   position: absolute;
   right: 0%;
   top: -24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -891,7 +846,7 @@
   width: 100%;
 }
 .App .app__wrapper .skills .skills__rating .div__skills__part1 .css span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -922,20 +877,9 @@
   height: 10px;
   background: #03a9f4;
   transition: ease-in-out;
-  -webkit-animation-name: animate2;
-          animation-name: animate2;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes animate2 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 540px;
-  }
+  animation-name: animate2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 @keyframes animate2 {
   from {
@@ -946,14 +890,6 @@
   }
 }
 @media (max-width: 480px) {
-  @-webkit-keyframes animate2 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 90%;
-    }
-  }
   @keyframes animate2 {
     from {
       width: 0%;
@@ -964,14 +900,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  @-webkit-keyframes animate2 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 90%;
-    }
-  }
   @keyframes animate2 {
     from {
       width: 0%;
@@ -986,7 +914,7 @@
   position: absolute;
   right: 0%;
   top: -24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -999,7 +927,7 @@
   width: 100%;
 }
 .App .app__wrapper .skills .skills__rating .div__skills__part1 .javascript span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1031,20 +959,9 @@
   height: 10px;
   background: #03a9f4;
   transition: ease-in-out;
-  -webkit-animation-name: animate3;
-          animation-name: animate3;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes animate3 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 500px;
-  }
+  animation-name: animate3;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 @keyframes animate3 {
   from {
@@ -1055,14 +972,6 @@
   }
 }
 @media (max-width: 480px) {
-  @-webkit-keyframes animate3 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 80%;
-    }
-  }
   @keyframes animate3 {
     from {
       width: 0%;
@@ -1073,14 +982,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  @-webkit-keyframes animate3 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 80%;
-    }
-  }
   @keyframes animate3 {
     from {
       width: 0%;
@@ -1095,7 +996,7 @@
   position: absolute;
   right: 0%;
   top: -24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1108,7 +1009,7 @@
   width: 100%;
 }
 .App .app__wrapper .skills .skills__rating .div__skills__part1 .php span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1139,20 +1040,9 @@
   height: 10px;
   background: #03a9f4;
   transition: ease-in-out;
-  -webkit-animation-name: animate4;
-          animation-name: animate4;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes animate4 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 520px;
-  }
+  animation-name: animate4;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 @keyframes animate4 {
   from {
@@ -1163,14 +1053,6 @@
   }
 }
 @media (max-width: 480px) {
-  @-webkit-keyframes animate4 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 85%;
-    }
-  }
   @keyframes animate4 {
     from {
       width: 0%;
@@ -1181,14 +1063,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  @-webkit-keyframes animate4 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 85%;
-    }
-  }
   @keyframes animate4 {
     from {
       width: 0%;
@@ -1203,7 +1077,7 @@
   position: absolute;
   right: 0%;
   top: -24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1216,7 +1090,7 @@
   width: 100%;
 }
 .App .app__wrapper .skills .skills__rating .div__skills__part1 .wordpress span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1247,20 +1121,9 @@
   height: 10px;
   background: #03a9f4;
   transition: ease-in-out;
-  -webkit-animation-name: animate5;
-          animation-name: animate5;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes animate5 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 290px;
-  }
+  animation-name: animate5;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 @keyframes animate5 {
   from {
@@ -1271,14 +1134,6 @@
   }
 }
 @media (max-width: 480px) {
-  @-webkit-keyframes animate5 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 50%;
-    }
-  }
   @keyframes animate5 {
     from {
       width: 0%;
@@ -1289,14 +1144,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  @-webkit-keyframes animate5 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 50%;
-    }
-  }
   @keyframes animate5 {
     from {
       width: 0%;
@@ -1311,7 +1158,7 @@
   position: absolute;
   right: 0%;
   top: -24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1324,7 +1171,7 @@
   width: 100%;
 }
 .App .app__wrapper .skills .skills__rating .div__skills__part1 .photoshop span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1355,20 +1202,9 @@
   height: 10px;
   background: #03a9f4;
   transition: ease-in-out;
-  -webkit-animation-name: animate6;
-          animation-name: animate6;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-@-webkit-keyframes animate6 {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 450px;
-  }
+  animation-name: animate6;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 @keyframes animate6 {
   from {
@@ -1379,14 +1215,6 @@
   }
 }
 @media (max-width: 480px) {
-  @-webkit-keyframes animate6 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 70%;
-    }
-  }
   @keyframes animate6 {
     from {
       width: 0%;
@@ -1397,14 +1225,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {
-  @-webkit-keyframes animate6 {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 70%;
-    }
-  }
   @keyframes animate6 {
     from {
       width: 0%;
@@ -1419,7 +1239,7 @@
   position: absolute;
   right: 0%;
   top: -24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.8196078431);
 }
@@ -1458,7 +1278,7 @@
   border: 2px solid #03a9f4;
   width: 150px;
   padding: 8px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
   color: #272727;
@@ -1473,7 +1293,7 @@
   position: relative;
 }
 .App .app__wrapper .section__resume .resume__head h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -1490,29 +1310,6 @@
   bottom: 0;
   left: 0;
   border-radius: 10px;
-}
-.App .app__wrapper .section__resume .resume__pt {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  height: 100px;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  padding: 10px 0;
-}
-@media (max-width: 480px) {
-  .App .app__wrapper .section__resume .resume__pt {
-    width: 100%;
-    height: 80px;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 481px) and (max-width: 900px) {
-  .App .app__wrapper .section__resume .resume__pt {
-    width: 100%;
-    height: 120px;
-  }
 }
 .App .app__wrapper .section__resume .resume__overall {
   width: 100%;
@@ -1547,7 +1344,7 @@
   }
 }
 .App .app__wrapper .section__resume .resume__overall .summary .h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px 0;
 }
 @media (max-width: 480px) {
@@ -1569,7 +1366,7 @@
   }
 }
 .App .app__wrapper .section__resume .resume__overall .summary .emman p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: italic;
 }
 @media (max-width: 480px) {
@@ -1581,7 +1378,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.862745098);
   padding: 0 30px;
@@ -1629,7 +1426,7 @@
   padding-bottom: 20px;
 }
 .App .app__wrapper .section__resume .resume__overall .summary .education .div__course .course h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 @media (max-width: 480px) {
@@ -1638,10 +1435,9 @@
   }
 }
 .App .app__wrapper .section__resume .resume__overall .summary .education .div__course .course span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: italic;
   background: rgba(146, 215, 247, 0.5764705882);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1688,7 +1484,7 @@
   }
 }
 .App .app__wrapper .section__resume .resume__overall .profession .h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px 0;
 }
 @media (max-width: 480px) {
@@ -1697,7 +1493,7 @@
   }
 }
 .App .app__wrapper .section__resume .resume__overall .profession .senior p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: italic;
 }
 @media (max-width: 480px) {
@@ -1720,7 +1516,7 @@
   row-gap: 10px;
 }
 .App .app__wrapper .section__resume .resume__overall .profession .senior .snr__web .snr__webli h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 @media (max-width: 480px) {
@@ -1729,10 +1525,9 @@
   }
 }
 .App .app__wrapper .section__resume .resume__overall .profession .senior .snr__web .snr__webli span {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: italic;
   background: rgba(146, 215, 247, 0.5764705882);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1745,11 +1540,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__resume .resume__overall .profession .senior .snr__web .senior__list {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
   }
 }
@@ -1791,7 +1586,7 @@
   position: relative;
 }
 .App .app__wrapper .section__service .service__head h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -1808,30 +1603,6 @@
   bottom: 0;
   left: 0;
   border-radius: 10px;
-}
-.App .app__wrapper .section__service .div__pt {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  height: 100px;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  padding: 10px 0;
-}
-@media (max-width: 480px) {
-  .App .app__wrapper .section__service .div__pt {
-    width: 100%;
-    height: 80px;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-}
-@media (min-width: 481px) and (max-width: 900px) {
-  .App .app__wrapper .section__service .div__pt {
-    width: 100%;
-    height: 120px;
-  }
 }
 .App .app__wrapper .section__service .service__overall .service {
   display: flex;
@@ -1862,7 +1633,7 @@
 }
 .App .app__wrapper .section__service .service__overall .service .div__service1 span {
   width: 30%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1880,7 +1651,7 @@
   }
 }
 .App .app__wrapper .section__service .service__overall .service .div__service1 .div__p h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__service .service__overall .service .div__service1 .div__p h3 {
@@ -1888,7 +1659,7 @@
   }
 }
 .App .app__wrapper .section__service .service__overall .service .div__service1 .div__p p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__service .service__overall .service .div__service1 .div__p p {
@@ -1906,14 +1677,15 @@
   background: rgba(146, 215, 247, 0.2549019608);
 }
 .App .app__wrapper .section__service .service__overall .service .div__service1:hover .div__p p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 @media (max-width: 480px) {
   .App .app__wrapper .section__service .service__overall .service .div__service1:hover .div__p p {
     font-size: 0.8rem;
     line-height: 1.25rem;
     width: 100%;
-    height: 90px;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 0px 10px;
     white-space: initial;
     overflow: initial;
@@ -1931,7 +1703,7 @@
   position: relative;
 }
 .App .app__wrapper .testimonials .test__head h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -1976,7 +1748,7 @@
   height: 200px;
   align-items: center;
   background: #ffffff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border-radius: 15px;
   font-style: italic;
   padding: 20px 20px;
@@ -2021,7 +1793,7 @@
   position: relative;
 }
 .App .app__wrapper .section__contact .contact__head h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -2046,7 +1818,7 @@
   width: 100%;
   height: 100px;
   justify-content: space-around;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px 0;
 }
 @media (max-width: 480px) {
@@ -2130,7 +1902,7 @@
   }
 }
 .App .app__wrapper .section__contact .div__contain .location .location1 span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #03a9f4;
   font-weight: 10;
   height: 50px;
@@ -2154,7 +1926,7 @@
   row-gap: 5px;
 }
 .App .app__wrapper .section__contact .div__contain .location .location1 .inner__location h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 @media (max-width: 480px) {
@@ -2163,7 +1935,7 @@
   }
 }
 .App .app__wrapper .section__contact .div__contain .location .location1 .inner__location p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: rgba(39, 39, 39, 0.7176470588);
 }
@@ -2269,7 +2041,7 @@
 .App .app__wrapper .section__contact .div__contain .message form button {
   width: 150px;
   height: 50px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: #03a9f4;
   color: #eaece5;
   border: none;
@@ -2288,10 +2060,15 @@
   display: none;
 }
 .App .app__wrapper .footer h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .App .app__wrapper .footer h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 480px) {
+  .App .app__wrapper .footer {
+    display: block;
+  }
 }
 @media (min-width: 481px) and (max-width: 900px) {
   .App .app__wrapper .footer {
@@ -2306,18 +2083,18 @@
 .bg .div__nav {
   box-shadow: inset -5px -5px 5px #272727, inset 5px 5px 5px #272727;
 }
-.bg .div__nav .nav__list li button span {
-  background-color: #eaece5;
-}
 .bg .app__wrapper {
   transition: 0.5s ease-in-out;
+}
+.bg .app__wrapper .home .but_div span {
+  background-color: #eaece5;
 }
 .bg .app__wrapper .section__about {
   transition: 0.5s ease-in-out;
   background: rgb(3, 3, 7);
   color: #eaece5;
 }
-.bg .app__wrapper .section__about .div__info .secon__div .first__li div li span {
+.bg .app__wrapper .section__about .div__info .secon__div .first__li li span {
   color: #eaece5;
 }
 .bg .app__wrapper .section__about .div__fact .fact__main .main .main__cal p {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBars } from'react-icons/fa'
+import { FaBars, FaMoon } from'react-icons/fa'
 import { FaTimes } from'react-icons/fa'
 import AnimatedText from 'react-animated-text-content';
 import MovingComponent from 'react-moving-text'
@@ -7,10 +7,14 @@ function Home(props) {
   const handleClick = props.handleClick 
   const btnRef = props.btnRef
   const change = props.change
+  const darkMode = props.darkMode
   const homeRef = props.homeRef
+  const changeBackground = props.changeBackground
   return (
     <div className="home" ref={homeRef} id="home">
       <span className='span' ref={btnRef} onClick={handleClick}>{change ? <FaTimes /> : <FaBars />}</span>
+      <div className='but_div' onClick={()=>{changeBackground()}}><span ref={darkMode}><FaMoon /></span>
+      </div>
       <div className="home__inner">
         <h1>
         <AnimatedText

@@ -10,7 +10,7 @@ function Location() {
         <span><FaMapMarkerAlt /></span>
         <div className="inner__location">
             <h2>Location:</h2>
-            <p>Chief Anthony Enahoro Estate, Ogba Lagos</p>
+            <p>Ikeja Lagos</p>
         </div>
        </div>
 

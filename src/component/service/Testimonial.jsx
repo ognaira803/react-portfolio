@@ -65,7 +65,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Impressed by your ability to turn our vision into reality. Your expertise in translating design into clean, efficient code is remarkable.
                             </q></p>
                         <div className="pointer">
                         
@@ -79,7 +79,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Thank you for your exceptional communication skills. You made complex concepts easy to understand, ensuring our project was on track at all times.
                             </q></p>
                         <div className="pointer">
                         
@@ -93,7 +93,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Your commitment to staying up-to-date with the latest web technologies is evident in the innovative features and responsive design of our website.
                             </q></p>
                         <div className="pointer">
                         
@@ -107,7 +107,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Your coding prowess is evident in the flawless functionality of our website. Your attention to detail and problem-solving skills truly set you apart
                             </q></p>
                         <div className="pointer">
                         
@@ -121,7 +121,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Thank you for creating a website that resonates with our audience. Your ability to understand our brand and tailor the user experience accordingly has been remarkable.
                             </q></p>
                         <div className="pointer">
                         
@@ -135,7 +135,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        The attention to detail in your code is outstanding. My website's flawless appearance and functionality is a testament to your commitment to excellence.
                             </q></p>
                         <div className="pointer">
                         
@@ -149,7 +149,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Your collaborative approach made the entire development process smooth and enjoyable. Your willingness to work closely with our team has been invaluable.
                             </q></p>
                         <div className="pointer">
                         
@@ -163,7 +163,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        The graphics designed for our social media campaign were outstanding. The visually striking visuals not only grabbed attention but also conveyed our message effectively. The design team's expertise truly shines
                             </q></p>
                         <div className="pointer">
                         
@@ -177,7 +177,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Your problem-solving skills truly shine. You navigated challenges with ease, ensuring our website not only met our requirements but exceeded them.
                             </q></p>
                         <div className="pointer">
                         
@@ -190,20 +190,20 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        The website's speed and performance speak volumes about your optimization skills. Your efforts in delivering a fast and efficient site have not gone unnoticed.
                             </q></p>
                         <div className="pointer">
                         
                         </div>
                     </div>
                     <img src={img7} alt="" />
-                    <h3>MERN Stack</h3>
+                    <h3>Manager</h3>
                 </SwiperSlide>
                 <SwiperSlide className="div__test1">
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        Kudos on creating a website that not only looks stunning but also performs seamlessly across all devices. Your dedication to optimizing user experience is commendable.
                             </q></p>
                         <div className="pointer">
                         
@@ -216,7 +216,7 @@ function Testimonial() {
                 <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                     <div className="div__comment">
                         <p><q>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quis cupiditate eaque itaque magni, praesentium exercitationem neque alias recusandae.
+                        The new website exceeded our expectations. Its sleek design and user-friendly interface have elevated our online presence, attracting more visitors and boosting engagement.
                             </q></p>
                         <div className="pointer">
                         

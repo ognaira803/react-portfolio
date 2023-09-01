@@ -6,10 +6,6 @@ function Skills() {
     <div className="skills__head">
         <h2>Skills</h2>
     </div>
-
-    <div className="skills__pt">
-        <p> Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint . Quia fugiat sit in iste c quas.</p>
-    </div>
     <div className="skills__rating">
         <div className="div__skills__part1">
             <div className="html">
@@ -20,14 +16,14 @@ function Skills() {
             </div>
 
             <div className="css">
-                <span>CSS</span>
+                <span>CSS / SASS / BOOTSTRAP /MATERIAL UI</span>
                 <div className="css__rating">
                     
                 </div>
             </div>
 
             <div className="javascript">
-                <span>JAVASCRIPT</span>
+                <span>JAVASCRIPT / REACT</span>
                 <div className="javascript__rating">
                     
                 </div>
@@ -37,7 +33,7 @@ function Skills() {
 
         <div className="div__skills__part1">
             <div className="php">
-                <span>PHP</span>
+                <span>NODE JS / MONGO DB</span>
                 <div className="php__rating">
 
                 </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 import MovingComponent from 'react-moving-text'
-import cv from '../resume/cvdoc/cv.pdf'
+import cv from '../resume/cvdoc/CHINONSO EMMANUEL CV.pdf'
 
 function Resume() {
   
   return (
-    <div className='section__resume' id='resume'>
+    <div className='section__resume section' id='resume'>
       <div className="resume__head">
                 <h2>Resume</h2>
             <div className="cv__download">
@@ -21,17 +21,13 @@ function Resume() {
 </MovingComponent>
             </div>
             </div>
-            <div className="resume__pt">
-                <p> Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
-
             <div className="resume__overall">
               <div className="summary">
                 <h2 className='h1'>Summary</h2>
                 <div className="sum">
                   <div className="emman">
                   <h2>Emmanuel Chinonso</h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel facere, sed porro doloremque rem culpa sit aliquam temporibus, voluptatibus mollitia tenetur ullam aliquid? Voluptate dolores non quisquam consectetur veritatis delectus.</p>
+                  <p>I'm a dedicated web developer with a keen eye for detail and a passion for crafting seamless online experiences. Proficient in front-end and back-end technologies, I specialize in transforming ideas into functional and visually appealing websites</p>
                   <div className="list">
                     <li>Ikeja, Lagos Nig.</li>
                     <li>08095032236</li>
@@ -42,18 +38,18 @@ function Resume() {
                   <h2 className='h1'>Education</h2>
                   <div className="div__course">
                     <div className="course">
-                    <h2>MASTER OF FINE ARTS & GRAPHIC DESIGN</h2>
-                    <span>2015-2017</span>
-                    <p className="sch">Rochester Institute of Technology, Rochester, NY</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias molestias soluta dignissimos quas earum ipsum!</p>
+                    <h2>WEB DEVELOPMENT & GRAPHIC DESIGN</h2>
+                    <span>2022-2023</span>
+                    <p className="sch">CvHub Ikeja, Lagos State</p>
+                    <p>I'm thrilled to share my experience pursuing my career in web development & Graphic design. This journey allowed me to blend my passion for designs and technology, honing skills in design software.</p>
                     </div>
                   </div>
                   <div className="div__course">
                     <div className="course">
-                    <h2>BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h2>
-                    <span>2010-2014</span>
-                    <p className="sch">Rochester Institute of Technology, Rochester, NY</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias molestias soluta dignissimos quas earum ipsum!</p>
+                    <h2>COMPUTER SCIENCE</h2>
+                    <span>2022</span>
+                    <p className="sch">University of Lagos, Lagos State</p>
+                    <p>I'm a passionate computer science student, driven by the endless possibilities of technology. My goal is to create impactful solutions that shape the digital world and improve lives. Excited to learn and contribute.</p>
                     </div>
                   </div>
                   </div>
@@ -64,9 +60,9 @@ function Resume() {
                 <div className="senior">
                   <div className="snr__web">
                       <div className="snr__webli">
-                      <h2>Senior Web Developer</h2>
+                      <h2>Internship</h2>
                       <span>2019-present</span>
-                      <p>Experion, NYC</p>
+                      <p>CvHub Ikeja, Lagos State</p>
                       </div>
                    <div className="senior__list">
                     <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
