@@ -118,9 +118,11 @@ $laptop: 901px;
             justify-content: space-around;
             width: 80%;
             font-size: small_size(big);
-            span{
+            a{
                 background: $heading-color;
+                color: $text-color;
                 height: 30px;
+                text-decoration: none;
                 width: 30px;
                 display: flex;
                 justify-content: space-around;

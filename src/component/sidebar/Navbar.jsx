@@ -21,11 +21,11 @@ function Navbar(props) {
            <img src={avatar} alt="" />
            <h1>Emmanuel Chinonso</h1>
            <div className="social__icons">
-             <span><FaFacebook /></span> 
-             <span><FaTwitter /></span>
-             <span><FaInstagramSquare /></span>
-             <span><FaGithub /></span>
-             <span><FaLinkedin /></span>
+             <a href="https://www.facebook.com/profile.php?id=100092307465040"><FaFacebook /></a> 
+             <a href="www.twitter.com"><FaTwitter /></a>
+             <a href="https://instagram.com/chukwunonso803?igshid=OGY3MTU3OGY1Mw=="><FaInstagramSquare /></a>
+             <a href="https://github.com/ognaira803"><FaGithub /></a>
+             <a href="https://linkedin.com/in/emmanuel-chinonso-297502241"><FaLinkedin /></a>
            </div>
            <div className="nav__list">
                <li> <a href="#home" onClick={()=>{setActiveNav('#home')}} className={activeNav === '#home' ? 'active' : ''}> <span><FaHome/> </span><span> Home</span></a></li>
