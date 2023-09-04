@@ -14,7 +14,6 @@
     "google-maps": "^4.3.3",
     "intersection-observer": "^0.12.2",
     "react": "^18.2.0",
-    "react-animate-on-scroll": "^2.1.5",
     "react-animated-text-content": "^1.0.1",
     "react-animation-on-scroll": "^5.1.0",
     "react-countup": "^6.3.2",
